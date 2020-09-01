@@ -191,7 +191,8 @@
           Уже зарегестрированы? Тогда скорее <a href="#">авторизируйтесь</a>.
         </p>
         <form class="contact-form">
-          <input class="contact-form__input" name="email" type="text" placeholder="E-mail"/>
+          <label for="email" aria-label="Введите e-mail"></label>
+          <input class="contact-form__input" id="email" name="email" type="text" placeholder="E-mail">
           <button type="submit" aria-label="Отправить E-mail"></button>
         </form>
         <p>Остались вопросы? Мы с радостью на них ответим!</p>
@@ -212,11 +213,11 @@
         <a class="button" href="#">Проложить маршрут</a>
       </section>
 
-      <sction class="map"></sction>
+      <section class="map"></section>
     </main>
 
     <footer class="page-footer">
-      <img class="logo" src="#">
+      <img class="logo" src="#" alt="Логотип Погнали">
       <ul class="social-list">
         <li class="social-list__item social-list__item--facebook"></li>
         <li class="social-list__item social-list__item--vk"></li>
@@ -224,7 +225,7 @@
       </ul>
       <div class="page-footer__author">
         <span class="page-footer__author-text">Разработано</span>
-        <img class="page-footer__author-logo" src="#">
+        <img class="page-footer__author-logo" src="#" alt="Логотип HTML Academy">
       </div>
     </footer>
   </body>
