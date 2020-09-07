@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="menu">
+
+    </nav>
+
+    <h1 class="header header--page">Направления</h1>
+  </header>
+
+  <main class="page-main">
+    <article class="companion-card companion-card--route-page">
+      <img class="companion-card__img" src="#" alt="Таня Фирсова">
+      <div class="companion-card__info">
+        <ul class="countries-list">
+          <li class="countries-list__item countries-list__item--sri-lanka"></li>
+          <li class="countries-list__item countries-list__item--thailand"></li>
+          <li class="countries-list__item countries-list__item--seychelles"></li>
+        </ul>
+        <p class="companion-card__info-name">Таня Фирсова</p>
+        <p class="companion-card__info-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+        <ul class="transports-list">
+          <li class="transport-list__item transport-list__item--plane"></li>
+          <li class="transport-list__item transport-list__item--bus"></li>
+          <li class="transport-list__item transport-list__item--bicycle"></li>
+          <li class="transport-list__item transport-list__item--foot"></li>
+        </ul>
+      </div>
+    </article>
+
+    <section class="plans">
+      <ul class="plans__list">
+        <li class="plans__item">
+          <b class="plans__route">Франция, Италия</b>
+          <div class="plans__route-info">
+            <span class="plans__count-people">3 попутчика</span>
+            <span class="plans__date">26 мар - 29 мар</span>
+          </div>
+          <button class="button" type="button">Изменить</button>
+        </li>
+        <li class="plans__item">
+          <b class="plans__route">Таиланд, Индонезия</b>
+          <div class="plans__route-info">
+            <span class="plans__count-people">1 попутчик</span>
+            <span class="plans__date">1 июл - 15 июл</span>
+          </div>
+          <button class="button" type="button">Изменить</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="add-plan">
+      <h2 class="header">Добавить план:</h2>
+
+      <form class="form add-plan__form" action="">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Шаг 1. Даты пребывания</legend>
+          <p class="add-plan__preview">
+            Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и её
+            предполагаемую длительность.
+          </p>
+
+          <label class="form__label" for="count-people">
+            Ищу попутчиков: <span class="form__label--gray">Чел.</span>
+          </label>
+          <input class="input" id="count-people" name="count_people" type="text" value="2">
+
+          <label class="form__label" for="duration">
+            Длительность: <span class="form__label--gray">Дн.</span>
+          </label>
+          <input class="input" id="duration" name="duration" type="text" value="2">
+
+          <label class="form__label--checkbox" for="with_children">Можно с детьми</label>
+          <input class="input__checkbox" id="with_children" name="with_children" type="checkbox" checked>
+
+          <div class="calendar">
+          <span class="calendar__change-month">
+            Март 2019
+          </span>
+
+            <table class="calendar__days">
+              <thead>
+              <tr>
+                <th>П</th>
+                <th>В</th>
+                <th>С</th>
+                <th>Ч</th>
+                <th>П</th>
+                <th>С</th>
+                <th>В</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+              </tr>
+              <tr>
+                <td>30</td>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              </tbody>
+            </table>
+
+            <button class="button" type="button">Следующий шаг</button>
+          </div>
+
+          <button type="button" class="button">Следующий шаг</button>
+          <button type="button" class="button">На шаг назад</button>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Шаг 2. Маршрут</legend>
+          <p class="add-plan__preview">
+            Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько
+          </p>
+
+          <div class="custom-select">
+            <button class="custom-select__button-close" aria-label="Удалить страну"></button>
+            <span class="custom-select__text">Босния и Герцеговина</span>
+            <span class="custom-select__flag custom-select__flag--bosnia-and-herzegovina"></span>
+          </div>
+
+          <div class="custom-select">
+            <button class="custom-select__button-close" aria-label="Удалить страну"></button>
+            <span class="custom-select__text">Чехия</span>
+            <span class="custom-select__flag custom-select__flag--chez"></span>
+          </div>
+
+          <div class="custom-select custom-select--change">
+            <button class="custom-select__button-close" aria-label="Удалить страну"></button>
+            <div class="custom-select__list-country">
+              <table class="custom-select__table">
+                <tr>
+                  <td>А</td>
+                  <td>Б</td>
+                  <td>В</td>
+                  <td>Г</td>
+                  <td>Д</td>
+                </tr>
+                <tr>
+                  <td>Е</td>
+                  <td>З</td>
+                  <td>И</td>
+                  <td>К</td>
+                  <td>Л</td>
+                </tr>
+                <tr>
+                  <td>М</td>
+                  <td>Н</td>
+                  <td>О</td>
+                  <td>П</td>
+                  <td>Р</td>
+                </tr>
+                <tr>
+                  <td>С</td>
+                  <td>Т</td>
+                  <td>У</td>
+                  <td>Ф</td>
+                  <td>Х</td>
+                </tr>
+                <tr>
+                  <td>Ч</td>
+                  <td>Ш</td>
+                  <td>Щ</td>
+                  <td>Э</td>
+                  <td>Ю</td>
+                </tr>
+              </table>
+
+              <ul class="custom-select__list">
+                <li class="custom-select__item">Австралия</li>
+                <li class="custom-select__item">Австрия</li>
+                <li class="custom-select__item">Айзербаджан</li>
+                <li class="custom-select__item">Албания</li>
+                <li class="custom-select__item">Алжир</li>
+                <li class="custom-select__item">Ангола</li>
+                <li class="custom-select__item">Андорра</li>
+                <li class="custom-select__item">Антигуа и Барбуда</li>
+                <li class="custom-select__item">Аргентина</li>
+                <li class="custom-select__item">Армения</li>
+                <li class="custom-select__item">Афганистан</li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="button" type="button">Следующий шаг</button>
+          <button class="button" type="button">На шаг назад</button>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Шаг 3. Развлечения</legend>
+          <p class="add-plan__preview">
+            Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить теги
+          </p>
+
+          <label class="form__label from__label--textarea" for="country-1">Босния и Герцеговина</label>
+          <textarea class="form__textarea" id="country-1" placeholder="План действий"></textarea>
+
+          <label class="form__label form__label--textarea" for="country-2">Чехия</label>
+          <textarea class="form__textarea" id="country-2" placeholder="План действий">
+            Пить пиво и лазить по старым замкам,
+            наслаждаться архитектурой и вот это всё.
+          </textarea>
+
+          <button class="button" type="button">Следующий шаг</button>
+          <button class="button" type="button">На шаг назад</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <img class="logo" src="#" alt="Логотип Погнали">
+    <ul class="social-list">
+      <li class="social-list__item social-list__item--facebook"></li>
+      <li class="social-list__item social-list__item--vk"></li>
+      <li class="social-list__item social-list__item--instagram"></li>
+    </ul>
+    <div class="page-footer__author">
+      <span class="page-footer__author-text">Разработано</span>
+      <img class="page-footer__author-logo" src="#" alt="Логотип HTML Academy">
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,12 +1,232 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="menu">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      </nav>
 
+      <section class="header">
+        <h1>В путешествие с крутыми попутчиками</h1>
+      </section>
+
+      <nav>
+
+      </nav>
+
+      <blockquote class="blockquote">
+        <p class="blockquote__text">
+          Лучшее приложение, что я видел в жизни!
+        </p>
+        <cite class="blockquote__author">
+          Мурат Эльтазин
+          главный редактор
+          газеты "гаджетлайф"
+        </cite>
+      </blockquote>
+
+      <section class="scheme">
+        <ul class="scheme__list">
+          <li class="scheme__item">
+            Выберите направление
+          </li>
+          <li class="scheme__item">
+            Изучите идеи путешественников
+          </li>
+          <li class="scheme__item">
+            Находите тех, кто похож на вас
+          </li>
+          <li class="scheme__item">
+            Путешествуйте вместе!
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <section class="preview-section">
+        <h2 class="header header--section-orange">О сервисе</h2>
+        <p>
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохнование в чужих.
+        </p>
+        <b>А если найдёте кого-то близкого по духу - скорее зовите в совместный трип!</b>
+      </section>
+
+      <section class="rotes">
+        <header class="preview-section">
+          <h2 class="header header--section-orange">Направления</h2>
+          <p class="preview-section__text">
+            Мы не продаём туры и ничего не рекламируем.
+            Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+          </p>
+        </header>
+
+        <ul class="routes-list">
+          <li class="routes-list__item">
+            <img class="routes-list__img" src="#" alt="Тайланд">
+
+            <div class="routes-list__info">
+              <div class="routes-list__text">
+                <span class="routes-list__text-country">Таиланд</span>
+                <p class="routes-list__text-slogan">Джунгли зовут!</p>
+              </div>
+              <small class="routes-list__see-count">18321</small>
+            </div>
+          </li>
+          <li class="routes-list__item">
+            <img class="routes-list__img" src="#" alt="Франция">
+
+            <div class="routes-list__info">
+              <div class="routes-list__text">
+                <span class="routes-list__text-country">Франция</span>
+                <p class="routes-list__text-slogan">Трэ бьен, манифик!</p>
+              </div>
+              <small class="routes-list__see-count">12518</small>
+            </div>
+          </li>
+          <li class="routes-list__item">
+            <img class="routes-list__img" src="#" alt="Чехия">
+
+            <div class="routes-list__info">
+              <div class="routes-list__text">
+                <span class="routes-list__text-country">Чехия</span>
+                <p class="routes-list__text-slogan">Закоулки старой Европы</p>
+              </div>
+              <small class="routes-list__see-count">5326</small>
+            </div>
+          </li>
+        </ul>
+
+        <a class="button" href="#">Показать все</a>
+      </section>
+
+      <section class="companions">
+        <header class="preview-section">
+          <h2 class="header header--section-orange">Попутчики</h2>
+          <p class="preview-section__text">
+            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужно пляж
+            и коктейл, а другому маршрут для хайкинга.
+          </p>
+          <b class="preview-section__text">Теперь можно легко найти единомышленников</b>
+        </header>
+
+        <ul class="companions__list">
+          <li class="companions__list-item">
+            <article class="companion-card">
+              <img class="companion-card__img" src="#" alt="Таня Фирсова">
+              <div class="companion-card__info">
+                <ul class="countries-list">
+                  <li class="countries-list__item countries-list__item--sri-lanka"></li>
+                  <li class="countries-list__item countries-list__item--thailand"></li>
+                  <li class="countries-list__item countries-list__item--seychelles"></li>
+                </ul>
+                <p class="companion-card__info-name">Таня Фирсова</p>
+                <p class="companion-card__info-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                <ul class="transports-list">
+                  <li class="transport-list__item transport-list__item--plane"></li>
+                  <li class="transport-list__item transport-list__item--bus"></li>
+                  <li class="transport-list__item transport-list__item--bicycle"></li>
+                  <li class="transport-list__item transport-list__item--foot"></li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li class="companions__list-item">
+            <article class="companion-card">
+              <ul class="countries-list">
+                <li class="countries-list__item countries-list__item--belgium"></li>
+                <li class="countries-list__item countires-list__item--czech"></li>
+              </ul>
+              <img class="companion-card__img" src="#" alt="Таня Фирсова">
+              <div class="companion-card__info">
+                <p class="companion-card__info-name">Петя Дёмин</p>
+                <p class="companion-card__info-tags">#бургер #бар #кино #концерт #крафт</p>
+                <ul class="transport-list">
+                  <li class="transport-list__item transport-list__item-plane"></li>
+                  <li class="transport-list__item transport-list__item-bus"></li>
+                  <li class="transport-list__item transport-list__item-bicycle"></li>
+                  <li class="transport-list__item transport-list__item-foot"></li>
+                </ul>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <a class="button" href="#">Показать всех</a>
+      </section>
+
+      <section class="add-profile">
+        <div class="add-profile__header">
+          <h2 class="header header--section-orange">Добавьте свой профиль</h2>
+
+          <img class="add-profile__image" src="#" alt="Таня Фирсова">
+        </div>
+
+        <ul class="add-profile__list">
+          <li class="add-profile__list-item">
+            Базовое размещение бесплатно
+          </li>
+          <li class="add-profile__list-item">
+            Вывод на первых позициях 99 руб./мес
+          </li>
+          <li class="add-profile__list-item">
+            Кастомный цвет карточки 59 руб./мес
+          </li>
+        </ul>
+
+        <a class="button" href="#">Показать тарифы для бизнеса</a>
+      </section>
+
+      <section class="contact-form">
+        <h2 class="header header--section-orange">
+          Заинтересовались?
+        </h2>
+        <p>
+          Зарегестрируйтесь, это быстро и бесплатно!
+          Уже зарегестрированы? Тогда скорее <a href="#">авторизируйтесь</a>.
+        </p>
+        <form class="contact-form">
+          <label for="email" aria-label="Введите e-mail"></label>
+          <input class="contact-form__input" id="email" name="email" type="text" placeholder="E-mail">
+          <button type="submit" aria-label="Отправить E-mail"></button>
+        </form>
+        <p>Остались вопросы? Мы с радостью на них ответим!</p>
+        <div class="contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              8 800 555-86-28
+            </li>
+            <li class="contacts__item contacts__item--email">
+              mail@htmlacademy.ru
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="address">
+        <address class="address__text">ул.Большая Конюшенная, 19/8</address>
+        <a class="button" href="#">Проложить маршрут</a>
+      </section>
+
+      <section class="map"></section>
+    </main>
+
+    <footer class="page-footer">
+      <img class="logo" src="#" alt="Логотип Погнали">
+      <ul class="social-list">
+        <li class="social-list__item social-list__item--facebook"></li>
+        <li class="social-list__item social-list__item--vk"></li>
+        <li class="social-list__item social-list__item--instagram"></li>
+      </ul>
+      <div class="page-footer__author">
+        <span class="page-footer__author-text">Разработано</span>
+        <img class="page-footer__author-logo" src="#" alt="Логотип HTML Academy">
+      </div>
+    </footer>
   </body>
 </html>
